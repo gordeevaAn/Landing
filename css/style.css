@@ -1,0 +1,1057 @@
+/*.................... Шрифты....................*/
+@font-face {
+    font-family: "NunitoSans";
+    src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "NunitoSans-Italic";
+    src: url(../fonts/NunitoSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: "YesevaOne";
+    src: url(../fonts/YesevaOne-Regular.ttf);
+}
+
+/*....................Основное....................*/
+body {
+    /* max-width: 1440px; */
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*....................HEADER/FOOTER....................*/
+.header_content,
+.footer_content {
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+    font-size: 11px;
+    line-height: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.button_header,
+.button_footer {
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px 13px 33px;
+    color: white;
+    text-transform: uppercase;
+    font-family: NunitoSans-Italic, Arial, Helvetika, sans-serif;
+}
+
+.logo {
+    color: #E3B873;
+    padding-left: 92px;
+}
+
+.header,
+.footer {
+    background-color: black;
+}
+
+.header_navigation,
+.footer_navigation {
+    list-style: none;
+    display: flex;
+}
+
+.header_navigation__item,
+.footer_navigation__item {
+    margin-right: 47px;
+
+}
+
+.header_navigation__item a,
+.footer_navigation__item a {
+    text-decoration: none;
+    color: white;
+}
+
+.phone {
+    text-decoration: none;
+    color: rgba(227, 184, 115, 1);
+}
+
+/*....................MAIN....................*/
+
+/*....................Section HERO....................*/
+.hero {
+    background-image: url(../images/backgroundHERO.jpg);
+    background-size: cover;
+    height: 707px;
+    padding-top: 191px;
+    position: relative;
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.hero_title {
+    margin: 0;
+    font-family: YesevaOne;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    max-width: 519px;
+    color: #fff;
+    padding-top: 50px;
+}
+
+
+.colortext {
+    color: rgba(227, 184, 115, 1);
+}
+
+.hero_text {
+    font-family: NunitoSans;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 36px;
+    color: white;
+    margin: 22px 0px 22px 0px;
+    height: 89px;
+    width: 505px;
+}
+
+.hero_button_calc {
+    height: 51px;
+    width: 207px;
+    border-radius: 2px;
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.3);
+    background-color: rgba(227, 184, 115, 1);
+    border: 0;
+    color: white;
+    font-family: "NunitoSans-Italic";
+    font-size: 11px;
+    line-height: 50px;
+    margin-right: 16px;
+}
+
+.hero_button_sub {
+    height: 51px;
+    width: 207px;
+    border-radius: 4px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    color: white;
+    font-family: "NunitoSans-Italic";
+    font-size: 11px;
+    line-height: 50px;
+    margin-left: 16px;
+}
+
+.hero_button {
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button_transparent {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+/*....................Section Completed_projects....................*/
+
+.completed_projects {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.completed_projects_content {
+    padding-top: 107px;
+    padding-right: 43px;
+    padding-bottom: 403px;
+    padding-left: 42px;
+}
+
+.navigation_completed_nav {
+    margin-top: 0;
+    padding-left: 0;
+    margin-right: 56px;
+    margin-left: 550px;
+    margin-bottom: 45.36px;
+    width: 623px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.completed-nav__item {
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+.completed-nav__item:first-child {
+    border-bottom: 1px solid;
+    color: rgba(227, 184, 115, 1);
+}
+
+.completed_main_ifo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.compleaded_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.completed_text_title {
+    font-size: 27px;
+    line-height: 37px;
+    color: rgba(227, 184, 115, 1);
+}
+
+.completed_text_p {
+    font-family: NunitoSans;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    height: 86px;
+    max-width: 440px;
+    letter-spacing: 0em;
+}
+
+.completed_text_block {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.completed_text_block_arrows {
+    padding-top: 85px;
+    width: 208px;
+}
+
+.completed_text_block h3 {
+    font-family: YesevaOne;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(227, 184, 115, 1);
+    text-transform: uppercase
+}
+
+.completed_text_block span {
+    font-family: NunitoSans;
+    font-size: 13px;
+    line-height: 21.28px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 1);
+}
+
+/*....................Section Online control....................*/
+.online_control {
+    margin-top: -250px;
+    max-width: 1300px;
+}
+
+.online_control_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.online_control_icon {
+    max-width: 200px;
+    margin-left: 100px;
+}
+
+.online_control_video {
+    width: 817px;
+    height: 434px;
+    filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
+    background-size: cover;
+    position: relative;
+}
+
+.video_iconPlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -36px;
+    margin-top: -34px;
+}
+
+.online_control_main hr {
+    text-align: center;
+    background-color: rgba(227, 184, 115, 1);
+    width: 55px;
+    height: 1.54px;
+    border: none;
+    margin-top: 62.5px;
+    margin-bottom: 29px;
+}
+
+.online_control_main p {
+    font-family: NunitoSans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(54, 54, 54, 1);
+    width: 580px;
+}
+
+.control_form {
+    font-family: NunitoSans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 769px;
+    height: 51px;
+    margin: 0 24px;
+}
+
+.control_form label {
+    display: block;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.control_form input.control_input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding-bottom: 5px;
+}
+
+.control_form input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+.control_form button {
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    font-family: NunitoSans, sans-serif;
+    font-size: 13px;
+    line-height: 27px;
+    width: 200px;
+    height: 51px;
+    align-content: center;
+}
+
+.control_checkbox {
+    margin-top: 35px;
+}
+
+.control_form .control_label {
+    display: none;
+}
+
+.contr_label {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.fake::before {
+    content: "\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked+.fake::before {
+    opacity: 1;
+}
+
+
+/*....................Section Types of Repair....................*/
+.types_of_repair {
+    max-width: 1300px;
+    margin-bottom: 230px;
+}
+
+.types_of_repair_main {
+    margin-top: 76px;
+    margin-bottom: 31.21px;
+    font-family: YesevaOne;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 28px;
+    text-align: center;
+
+}
+
+.types_repair_img {
+    width: 39px;
+    height: 420px;
+}
+
+.types_repair {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 124px;
+}
+
+.types_repair_text {
+    position: relative;
+    width: 300px;
+    height: 285px;
+    margin-top: -138px;
+    margin-right: 31px;
+    margin-left: 31px;
+    padding-top: 15px;
+    padding-left: 34px;
+    background-color: #fff;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    padding-bottom: 43px;
+}
+
+.types_repair_text_subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #363636;
+    margin-bottom: 7px;
+    text-transform: none;
+}
+
+.types_repair ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 18px;
+}
+
+.types_repair li {
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.types_repair_price {
+    position: relative;
+    width: 228px;
+    height: 54px;
+    box-sizing: border-box;
+    margin-top: -27px;
+    margin-left: 33px;
+    padding: 17px 10px 17px 13px;
+    font-family: YesevaOne;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 25px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    background: rgba(227, 184, 115, 1);
+    color: #fff;
+}
+
+/*.............................Measurer_block_step .............................*/
+
+/*........................Measurer_form .........................*/
+.measurer {
+    max-width: 1300px;
+    padding-right: 8px;
+}
+
+.measurer_form_row {
+    font-family: NunitoSans;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../images/background_step.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.measurer_form_column {
+    padding-top: 80px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.measurer_form_column_form-item-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 84px;
+    padding-left: 150px;
+}
+
+.style {
+    width: 56px;
+    height: 55px;
+    background: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 35px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-right: 9px;
+}
+
+.measurer__text {
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+    width: 320px;
+}
+
+.measurer_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 106px;
+    width: 506px;
+    height: 509px;
+    background-color: #000;
+    margin-left: 205px;
+    margin-right: 40px;
+}
+
+.measurer_form_input {
+    width: 408px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.measurer_form>h3 {
+    font-family: NunitoSans;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    padding: 28px 104.5px 35px;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+    ;
+}
+
+.measurer_form form {
+    padding: 0 49px 27px;
+}
+
+.measurer_form_input label {
+    height: 50px;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.measurer_form input {
+    width: 100%;
+    color: #FFFFFF;
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 2px;
+}
+
+.measurer_form input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+label.label_check {
+    font-family: NunitoSans;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 1);
+    width: 259px;
+    height: 16px;
+}
+
+.measurer_button {
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    font-family: NunitoSans, sans-serif;
+    font-size: 13px;
+    line-height: 27px;
+    width: 200px;
+    height: 51px;
+    align-content: center;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.measurer_block_piggy {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 440px;
+    height: 100px;
+    margin-top: -20px;
+    margin-left: 753px;
+}
+
+/*....................Realize_fantasies....................*/
+
+
+
+.realize_fantasies {
+    max-width: 1300px;
+    background-image: url(../images/backgroundFant.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 880px;
+    position: relative;
+    margin-top: -30px;
+    margin-bottom: 0;
+}
+
+.overlay_fant {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container_realize_fantasies {
+    font-family: NunitoSans;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 7px;
+    padding-right: 10px;
+    margin-top: 170px;
+    margin-left: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.container_realize_fantasies>h2 {
+    font-family: YesevaOne;
+    font-style: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    width: 350px;
+    padding-top: 170px;
+    text-align: start;
+    color: rgba(227, 184, 115, 1);
+}
+
+.realize_fantasies_main ul {
+    list-style: none;
+    margin-top: 37px;
+    padding-left: 20px;
+    color: white;
+}
+
+.realize_fantasies_main li {
+    margin-bottom: 11.4px;
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.realize_fantasies_img1 {
+    position: absolute;
+    top: -10px;
+    right: 500px;
+}
+
+.realize_fantasies_img2 {
+    position: absolute;
+    top: -80px;
+    right: 100px;
+}
+
+.realize_fantasies_img3 {
+    position: absolute;
+    bottom: -110px;
+    right: 500px;
+}
+
+.realize_fantasies_img4 {
+    position: absolute;
+    right: 100px;
+    bottom: -35px;
+}
+
+/*....................Our client....................*/
+.our_client {
+    max-width: 1300px;
+    background: url(../images/backGR_our_clients.jpg) 100%;
+    background-repeat: repeat-x;
+    margin: 0 auto;
+}
+
+.our_client_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.our_client_title>h3 {
+    font-family: YesevaOne;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.our_client_main {
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin: 39px 100px 0 50px;
+    padding-top: 24px;
+}
+
+.our_client_main-item {
+    display: flex;
+    flex-direction: column;
+    width: 334px;
+}
+
+.client_img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+    font-family: 'YesevaOne';
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.client_fullname {
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+    margin-left: 24px;
+    text-transform: none;
+    text-align: left;
+}
+
+.client_review-p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-right: 12px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 180%;
+    color: #959595;
+}
+
+.questions_form_container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.questions_form_main h3 {
+    font-family: YesevaOne;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 50px;
+}
+
+.questions_form_main {
+    width: 800px;
+    height: 440px;
+    background-color: #000;
+    margin: 0 200px 0 230px;
+    position: relative;
+    z-index: 1;
+}
+
+.questions_form_main form {
+    padding: 30px 182px 0 181px;
+}
+
+.questions_form_main>form>.questions_form_input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 520px;
+    height: 140px;
+    margin-bottom: 47px;
+    align-content: space-between;
+}
+
+.questions_form_main label {
+    width: 230px;
+    height: 45px;
+    font-family: NunitoSans;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.questions_form_input input {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.questions_form_main input::placeholder {
+    color: #fff;
+    font-family: NunitoSans;
+    font-size: 14px;
+}
+
+.questions_form_main label.question_field {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+
+.questions_form_container .question_checkbox {
+    text-align: center;
+}
+
+.questions_form_button {
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    font-family: NunitoSans, sans-serif;
+    font-size: 13px;
+    line-height: 27px;
+    width: 200px;
+    height: 51px;
+    align-content: center;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+/*....................Contacts....................*/
+.contacts {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.contacts_conteiner {
+    height: 955px;
+    background-image: url(../images/bg_contacts.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: -200px;
+}
+
+.contacts_adress_tel>h3 {
+    font-family: YesevaOne;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(227, 184, 115, 1);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 590px;
+    height: 105px;
+    position: relative;
+    z-index: 1;
+    margin: 20px auto -20px;
+    padding-top: 250px;
+}
+
+.contacts_adress_tel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts_Inst_Mail {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+
+}
+
+.contacts_adress_map img {
+    height: 466px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+/*....................Adaptive layout....................*/
+
+
+/*....................heder....................*/
+
+@media (max-width: 1300px) {
+    .header-content {
+        display: flex;
+        height: 57px;
+
+    }
+
+    .header {
+        height: 53px;
+    }
+
+    .logo {
+        font-size: 11px;
+        padding-left: 18px;
+    }
+
+    .header_navigation,
+    .button_header {
+        display: none;
+    }
+
+    .phone {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 30px;
+        margin-left: 18px;
+    }
+
+    /*....................hero....................*/
+    .hero {
+        background-image: url(../images/imagesMOBILE/bg_hero_mobile.png);
+        background-size: 100% 100%;
+        padding-top: 85px;
+    }
+
+    .hero_container {
+        padding-left: 18px;
+        padding-top: 85px;
+        padding-right: 18px;
+        max-width: 100%;
+    }
+
+    .hero_container.hero-content {
+        box-sizing: border-box;
+        padding-left: 0;
+    }
+
+    .hero_title {
+        width: 330px;
+        font-size: 23px;
+        padding-top: 0;
+    }
+
+    .hero_text {
+        margin-top: 16px;
+        width: 320px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .hero_button {
+        display: flex;
+        flex-direction: column;
+        height: 128px;
+        width: 100%;
+    }
+
+    /*....................completed_projects....................*/
+    .navigation_completed_nav {
+        display: none;
+    }
+}
