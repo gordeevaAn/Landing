@@ -115,7 +115,7 @@ body * {
 .hero_content {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    padding-left: 50px;
     position: relative;
     z-index: 1;
 
@@ -144,45 +144,44 @@ body * {
     font-style: normal;
     line-height: 36px;
     color: white;
-    margin: 22px 0px 22px 0px;
+    margin: 22px 0px 30px 0px;
     height: 89px;
     width: 505px;
 }
 
-.hero_button_calc {
-    height: 51px;
-    width: 207px;
-    border-radius: 2px;
-    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.3);
-    background-color: rgba(227, 184, 115, 1);
-    border: 0;
-    color: white;
-    font-family: "NunitoSans-Italic";
-    font-size: 11px;
-    line-height: 50px;
-    margin-right: 16px;
-}
-
-.hero_button_sub {
-    height: 51px;
-    width: 207px;
-    border-radius: 4px;
-    border: 1px;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 1);
-    background-color: transparent;
-    color: white;
-    font-family: "NunitoSans-Italic";
-    font-size: 11px;
-    line-height: 50px;
-    margin-left: 16px;
+.hero_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px;
 }
 
 .hero_button {
-    display: flex;
-    margin-top: 50px;
+    font-family: "NunitoSans-Italic";
+    font-size: 11px;
+    color: white;
+    line-height: 50%;
     text-align: center;
+    padding: 20px 20px;
+    margin: 20px 20px;
 }
+
+.hero_button_calc {
+    /* max-width: 215px;*/
+    border-radius: 2px;
+    border: 0;
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.3);
+    background-color: rgba(227, 184, 115, 1);
+}
+
+.hero_button_sub {
+    border-radius: 4px;
+    border: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+}
+
 
 .button_transparent {
     background-color: rgba(0, 0, 0, 0);
@@ -193,7 +192,7 @@ body * {
 /*....................Section Completed_projects....................*/
 
 .completed_projects {
-    max-width: 1300px;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: black;
     color: white;
@@ -272,6 +271,14 @@ body * {
     width: 208px;
 }
 
+.completed_arrows {
+    display: none;
+}
+
+.completedproj_img_mob {
+    display: none;
+}
+
 .completed_text_block h3 {
     font-family: YesevaOne;
     font-size: 18px;
@@ -294,7 +301,7 @@ body * {
 /*....................Section Online control....................*/
 .online_control {
     margin-top: -250px;
-    max-width: 1300px;
+    max-width: 100%;
 }
 
 .online_control_main {
@@ -306,11 +313,11 @@ body * {
 
 .online_control_icon {
     max-width: 200px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .online_control_video {
-    width: 817px;
+    max-width: 817px;
     height: 434px;
     filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
     background-size: cover;
@@ -327,10 +334,10 @@ body * {
 
 .online_control_main hr {
     text-align: center;
-    background-color: rgba(227, 184, 115, 1);
+    color: rgba(227, 184, 115, 1);
     width: 55px;
     height: 1.54px;
-    border: none;
+    border-style: solid;
     margin-top: 62.5px;
     margin-bottom: 29px;
 }
@@ -378,6 +385,10 @@ body * {
     font-size: 14px;
     line-height: 23px;
     color: #363636;
+}
+
+.control_form .labelmob {
+    display: none;
 }
 
 .control_form button {
@@ -447,6 +458,10 @@ body * {
     line-height: 28px;
     text-align: center;
 
+}
+
+.types_repair_item .mobile {
+    display: none;
 }
 
 .types_repair_img {
@@ -673,8 +688,6 @@ label.label_check {
 
 /*....................Realize_fantasies....................*/
 
-
-
 .realize_fantasies {
     max-width: 1300px;
     background-image: url(../images/backgroundFant.png);
@@ -684,6 +697,14 @@ label.label_check {
     position: relative;
     margin-top: -30px;
     margin-bottom: 0;
+}
+
+.realize_fantasies_img_mobile {
+    display: none;
+}
+
+.arrows {
+    display: none;
 }
 
 .overlay_fant {
@@ -969,6 +990,10 @@ label.label_check {
 
 }
 
+.contacts_map_mobile {
+    display: none;
+}
+
 .contacts_adress_map img {
     height: 466px;
     text-align: center;
@@ -983,7 +1008,7 @@ label.label_check {
 
 /*....................heder....................*/
 
-@media (max-width: 1300px) {
+@media (max-width: 768px) {
     .header-content {
         display: flex;
         height: 57px;
@@ -1025,9 +1050,9 @@ label.label_check {
         max-width: 100%;
     }
 
-    .hero_container.hero-content {
+    .hero-content {
         box-sizing: border-box;
-        padding-left: 0;
+        padding-left: 20px;
     }
 
     .hero_title {
@@ -1043,15 +1068,469 @@ label.label_check {
         font-size: 14px;
     }
 
+    .hero_buttons {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
     .hero_button {
+        flex: 1 1 100%;
+    }
+
+    .hero_button {
+        margin-right: 40px;
+    }
+
+    /*.hero_button {
         display: flex;
         flex-direction: column;
-        height: 128px;
+        height: 51px;
         width: 100%;
+        padding: 20px;
+    }*/
+    .hero_button span {
+        display: none;
     }
 
     /*....................completed_projects....................*/
+    .completed_projects_content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    .completed_main_ifo {
+        display: flex;
+        flex-direction: column;
+    }
+
     .navigation_completed_nav {
         display: none;
     }
+
+    .completed_text_block_arrows {
+        display: none;
+    }
+
+    .completed_text_title {
+        margin-top: 0;
+    }
+
+    .compleaded_text {
+        max-width: 100%;
+        font-size: 22px;
+        line-height: 138.6%;
+        margin: 0 auto 26px auto;
+    }
+
+    .completed_text_p {
+        font-size: 11px;
+    }
+
+    .completed_arrows {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: 200px;
+    }
+
+    .completedproj_img_mob {
+        position: relative;
+        max-width: 340px;
+        display: block;
+        margin: 70px auto;
+
+    }
+
+    .completedproj_img {
+        display: none;
+    }
+
+    /*....................control....................*/
+    .online_control {
+        margin-top: -25px;
+    }
+
+    .online_control_icon {
+        margin: 0 auto;
+    }
+
+    .online_control_main {
+        background-color: #000;
+        height: 827px;
+        margin: 0 auto 81px auto;
+        max-width: 100%;
+    }
+
+    .online_control_video-video {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .control_form {
+        position: relative;
+    }
+
+    .video_iconPlay {
+        position: absolute;
+        width: 22%;
+        height: 35%;
+        top: 24%;
+        left: 37%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .online_control_main hr {
+        text-align: center;
+        color: rgba(227, 184, 115, 1);
+        width: 115px;
+        height: 1.55px;
+        border-style: solid;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .online_control_main p {
+        color: #FFFFFF;
+        max-width: 100%;
+        text-align: center;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .control_form {
+        display: block;
+        width: 320px;
+        height: 311px;
+        margin: 0 auto;
+    }
+
+    .control_form label {
+        color: rgba(255, 255, 255, 0.5);
+        border: none;
+    }
+
+    .control_form label[for="name"] {
+        margin-bottom: 25px;
+    }
+
+    .control_form label[for="phone"] {
+        margin-bottom: 26.5px;
+    }
+
+    .control_form label span.phone {
+        display: none;
+    }
+
+    .control_form label span.num {
+        display: block;
+    }
+
+    .control_input.control_input {
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        height: 17px;
+        padding: 10px 0 15px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .control_input::placeholder {
+        color: #fff;
+        line-height: 138.72%;
+        color: #fff;
+    }
+
+    .control_form .label {
+        display: block;
+        padding-bottom: 150px;
+    }
+
+    .fake {
+        margin-right: 6px;
+    }
+
+    .control_checkbox {
+        display: none;
+    }
+
+    .control_form_button {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 35px;
+        padding: 15px 0 19px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    /*....................Types of repair....................*/
+    .types_of_repair {
+        margin-bottom: 0;
+    }
+
+    .types_of_repair_main {
+        margin-bottom: 41px;
+    }
+
+    .types_of_repair_main h3 {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 138.6%;
+    }
+
+    .types_repair {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-bottom: 0px;
+    }
+
+    .types_repair_item {
+        margin-bottom: 59px;
+    }
+
+    .types_repair_item .last {
+        margin-bottom: 0;
+    }
+
+    .types_repair_img img {
+        width: 339px;
+    }
+
+    .types_repair_item .desktop {
+        display: none;
+    }
+
+    .types_repair_item .mobile {
+        display: block;
+    }
+
+    .types_repair_text {
+        margin-top: -146px;
+        margin-right: 68px;
+        margin-left: 0;
+        padding-top: 20px;
+        padding-left: 29px;
+
+    }
+
+    .types_repair_text_subtitle {
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 21px;
+    }
+
+    .types_repair_item li {
+        line-height: 22px;
+    }
+
+    .types_repair_price {
+        width: 190.5px;
+        height: 40px;
+        font-size: 15px;
+        line-height: 138.6%;
+        padding: 10px 14px;
+        margin-top: -25px;
+        margin-left: 0;
+    }
+
+    .measurer {
+        display: none;
+    }
+
+    .measurer_block_piggy {
+        display: none;
+    }
+
+    /*....................Realize fantasies ....................*/
+    .realize_fantasies {
+        background-image: none;
+        /* background-color: #000; */
+        position: static;
+        margin-top: -200px;
+        margin-bottom: -121px;
+    }
+
+    .realize_fantasies_main {
+        padding-left: 0;
+        padding-right: 0;
+        position: static;
+    }
+
+    .container_realize_fantasies {
+        display: block;
+        height: 332px;
+        margin: 0 auto;
+    }
+
+    .container_realize_fantasies ul {
+        display: none;
+    }
+
+    .realize_fantasies_img {
+        display: none;
+    }
+
+    .container_realize_fantasies {
+        padding-top: 120px;
+        padding-bottom: 0;
+        width: 340px;
+        height: 332px;
+        position: relative;
+    }
+
+    .container_realize_fantasies .arrows {
+        display: flex;
+        justify-content: space-between;
+        max-width: 330px;
+        position: relative;
+        top: -150px;
+    }
+
+    .container_realize_fantasies>h2 {
+        display: block;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-top: 55px;
+        font-size: 22px;
+        line-height: 138.6%;
+        font-weight: normal;
+        text-align: center;
+        color: #E3B873;
+    }
+
+    .realize_fantasies_img_mobile {
+        max-width: 340px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .overlay_fant {
+        display: none;
+    }
+
+    /*....................Our client....................*/
+    .our_client_title {
+        display: none;
+    }
+
+    .our_client_main {
+        display: none;
+    }
+
+    /*....................Questions form....................*/
+    .questions_form_container {
+        margin-top: -465px;
+        background-image: none;
+        background-color: #000;
+    }
+
+    .questions_form_main {
+        width: 339px;
+        height: 716px;
+        margin: 0 auto;
+        position: static;
+        z-index: 0;
+    }
+
+    .questions_form_main h3 {
+        margin-top: 0;
+        margin-bottom: 50px;
+        padding-top: 170px;
+    }
+
+    .questions_form_main form {
+        padding: 0;
+    }
+
+    .questions_form_main>form>.questions_form_input {
+        flex-direction: column;
+        width: 339px;
+        height: 261px;
+        margin-bottom: 26px;
+    }
+
+    .questions_form_main label.form_input-label {
+        width: 100%;
+    }
+
+    .questions_form_input input {
+        border-bottom-color: #fff;
+    }
+
+    .questions_form_container .question_checkbox {
+        text-align: start;
+    }
+
+    .questions_form_button {
+        width: 100%;
+        margin-top: 68px;
+        margin-left: 0;
+        padding-top: 6px;
+    }
+
+    /*....................Contacts....................*/
+    .contacts {
+        max-height: 100%;
+
+        margin: 0 auto;
+    }
+
+    .contacts_conteiner {
+        background-image: none;
+        background-color: #000;
+        position: static;
+    }
+
+    .contacts_map_mobile {
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        /* margin-bottom: 35px;*/
+    }
+
+    .contacts_adress_tel {
+        width: 340px;
+        height: 134px;
+    }
+
+    .contacts_adress_tel>h3 {
+        display: flex;
+        justify-content: center;
+        width: 340px;
+        height: 134px;
+        font-size: 18px;
+        line-height: 138.6%;
+        text-align: center;
+        max-width: 310px;
+        padding-top: 0;
+        padding-left: 25px;
+    }
+
+    .contacts_Inst_Mail {
+        width: 103px;
+        height: 38px;
+    }
+
+    .contacts_Inst_Mail img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contacts_adress_map {
+        display: none;
+    }
+
+    /* ---------Footer--------------- */
+    .footer {
+        display: none;
+    }
+
 }
