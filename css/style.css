@@ -20,6 +20,7 @@ body {
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
+    margin: 0 auto;
 }
 
 body * {
@@ -53,6 +54,7 @@ body * {
     line-height: 15px;
     position: relative;
     z-index: 1;
+    margin: 0 auto;
 }
 
 .button_header,
@@ -62,10 +64,11 @@ body * {
     border-radius: 2px;
     outline: 0;
     border: 0;
-    padding: 13px 33px 13px 33px;
+    padding: 13px 13px 13px 33px;
     color: white;
     text-transform: uppercase;
     font-family: NunitoSans-Italic, Arial, Helvetika, sans-serif;
+    margin-right: 10px;
 }
 
 .logo {
@@ -75,6 +78,8 @@ body * {
 
 .header,
 .footer {
+    margin: 0 auto;
+    max-width: 1300px;
     background-color: black;
 }
 
@@ -110,6 +115,8 @@ body * {
     height: 707px;
     padding-top: 191px;
     position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .hero_content {
@@ -192,7 +199,7 @@ body * {
 /*....................Section Completed_projects....................*/
 
 .completed_projects {
-    max-width: 1440px;
+    max-width: 1300px;
     margin: 0 auto;
     background-color: black;
     color: white;
@@ -239,7 +246,7 @@ body * {
     justify-content: space-between;
 }
 
-.compleaded_text {
+.compleaded_text_main {
     display: flex;
     flex-direction: column;
 }
@@ -278,6 +285,9 @@ body * {
 .completedproj_img_mob {
     display: none;
 }
+.completedproj_img {
+    margin-top: -150px;
+}
 
 .completed_text_block h3 {
     font-family: YesevaOne;
@@ -313,7 +323,7 @@ body * {
 
 .online_control_icon {
     max-width: 200px;
-    margin-left: 50px;
+
 }
 
 .online_control_video {
@@ -322,6 +332,7 @@ body * {
     filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
     background-size: cover;
     position: relative;
+    margin: 0 auto;
 }
 
 .video_iconPlay {
@@ -695,8 +706,7 @@ label.label_check {
     background-repeat: no-repeat;
     height: 880px;
     position: relative;
-    margin-top: -30px;
-    margin-bottom: 0;
+    margin: 0 auto;
 }
 
 .realize_fantasies_img_mobile {
@@ -1117,30 +1127,39 @@ label.label_check {
         margin-top: 0;
     }
 
-    .compleaded_text {
+    .compleaded_text_main {
         max-width: 100%;
         font-size: 22px;
         line-height: 138.6%;
-        margin: 0 auto 26px auto;
+        margin: 0;
+        order: 3;
+        margin-bottom: 150px;
     }
 
     .completed_text_p {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .completed_arrows {
         display: flex;
-        justify-content: space-around;
         position: relative;
-        bottom: 200px;
+        max-width: 330px;
+      bottom: 150px;
+      margin: 0 auto;
+    }
+    .completed_proj_arrow_Left {
+        padding-right: 125px;
     }
 
+    .completed_proj_arrow_Right {
+        padding-left: 125px;
+    }
+    
+    
     .completedproj_img_mob {
-        position: relative;
         max-width: 340px;
         display: block;
-        margin: 70px auto;
-
+        margin: 0px auto;
     }
 
     .completedproj_img {
