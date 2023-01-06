@@ -68,7 +68,6 @@ body * {
     color: white;
     text-transform: uppercase;
     font-family: NunitoSans-Italic, Arial, Helvetika, sans-serif;
-    margin-right: 10px;
 }
 
 .logo {
@@ -79,7 +78,7 @@ body * {
 .header,
 .footer {
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1440px;
     background-color: black;
 }
 
@@ -115,7 +114,7 @@ body * {
     height: 707px;
     padding-top: 191px;
     position: relative;
-    max-width: 1300px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -199,7 +198,7 @@ body * {
 /*....................Section Completed_projects....................*/
 
 .completed_projects {
-    max-width: 1300px;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: black;
     color: white;
@@ -210,6 +209,7 @@ body * {
 }
 
 .completed_projects_content {
+    max-width: 1300px;
     padding-top: 107px;
     padding-right: 43px;
     padding-bottom: 403px;
@@ -285,6 +285,7 @@ body * {
 .completedproj_img_mob {
     display: none;
 }
+
 .completedproj_img {
     margin-top: -150px;
 }
@@ -311,10 +312,11 @@ body * {
 /*....................Section Online control....................*/
 .online_control {
     margin-top: -250px;
-    max-width: 100%;
+    max-width: 1440зч;
 }
 
 .online_control_main {
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -455,9 +457,13 @@ body * {
 
 
 /*....................Section Types of Repair....................*/
+.section_types_of_repair {
+    max-width: 1440px;
+    margin-bottom: 230px;
+}
 .types_of_repair {
     max-width: 1300px;
-    margin-bottom: 230px;
+    margin: 0 auto;
 }
 
 .types_of_repair_main {
@@ -700,7 +706,7 @@ label.label_check {
 /*....................Realize_fantasies....................*/
 
 .realize_fantasies {
-    max-width: 1300px;
+    max-width: 1440px;
     background-image: url(../images/backgroundFant.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -708,7 +714,9 @@ label.label_check {
     position: relative;
     margin: 0 auto;
 }
-
+.realize_fantasies_main {
+    max-width: 1300px;
+}
 .realize_fantasies_img_mobile {
     display: none;
 }
@@ -793,6 +801,12 @@ label.label_check {
 
 /*....................Our client....................*/
 .our_client {
+    max-width: 1440px;
+   /* background: url(../images/backGR_our_clients.jpg) 100%;
+    background-repeat: repeat-x;
+    margin: 0 auto;*/
+}
+.our_client_main {
     max-width: 1300px;
     background: url(../images/backGR_our_clients.jpg) 100%;
     background-repeat: repeat-x;
@@ -816,7 +830,7 @@ label.label_check {
     text-transform: uppercase;
 }
 
-.our_client_main {
+.our_client_main_people {
     max-width: 1300px;
     display: flex;
     justify-content: space-between;
@@ -955,15 +969,16 @@ label.label_check {
 
 /*....................Contacts....................*/
 .contacts {
-    max-width: 1300px;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: #000;
 }
 
 .contacts_conteiner {
+    max-width: 1300px;
     height: 955px;
     background-image: url(../images/bg_contacts.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     margin-top: -200px;
 }
@@ -1144,9 +1159,10 @@ label.label_check {
         display: flex;
         position: relative;
         max-width: 330px;
-      bottom: 150px;
-      margin: 0 auto;
+        bottom: 150px;
+        margin: 0 auto;
     }
+
     .completed_proj_arrow_Left {
         padding-right: 125px;
     }
@@ -1154,8 +1170,8 @@ label.label_check {
     .completed_proj_arrow_Right {
         padding-left: 125px;
     }
-    
-    
+
+
     .completedproj_img_mob {
         max-width: 340px;
         display: block;
@@ -1440,7 +1456,7 @@ label.label_check {
         display: none;
     }
 
-    .our_client_main {
+    .our_client_main_people {
         display: none;
     }
 
